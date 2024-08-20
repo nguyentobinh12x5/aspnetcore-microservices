@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponAPI", "src\Services\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductAPI", "src\Services\ProductAPI\ProductAPI.csproj", "{CA941299-E119-4818-BDD0-D63538521C2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "src\Services\ApiGateway\ApiGateway.csproj", "{97FFC50D-B848-4A7C-B1EC-72410590FC12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{CA941299-E119-4818-BDD0-D63538521C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA941299-E119-4818-BDD0-D63538521C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA941299-E119-4818-BDD0-D63538521C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FFC50D-B848-4A7C-B1EC-72410590FC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FFC50D-B848-4A7C-B1EC-72410590FC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FFC50D-B848-4A7C-B1EC-72410590FC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FFC50D-B848-4A7C-B1EC-72410590FC12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{2B4AE35B-8A5C-41AF-A53B-83728787452E} = {F42F37AE-66EB-4230-8231-C2CAB04FBF32}
 		{3AA28982-5E72-4DC6-9664-02510B212C44} = {F42F37AE-66EB-4230-8231-C2CAB04FBF32}
 		{CA941299-E119-4818-BDD0-D63538521C2B} = {F42F37AE-66EB-4230-8231-C2CAB04FBF32}
+		{97FFC50D-B848-4A7C-B1EC-72410590FC12} = {F42F37AE-66EB-4230-8231-C2CAB04FBF32}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A7A7F37-746E-4F16-AA52-E64978183974}
