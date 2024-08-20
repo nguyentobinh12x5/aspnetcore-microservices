@@ -1,6 +1,6 @@
 using System;
 
-namespace Auth.API.Models;
+namespace AuthAPI.Models;
 
 public class JwtOptions
 {

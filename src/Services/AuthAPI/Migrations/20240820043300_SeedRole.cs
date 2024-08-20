@@ -4,10 +4,10 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Auth.API.Migrations
+namespace AuthAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedRoleData : Migration
+    public partial class SeedRole : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace Auth.API.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "1", null, "Admin", "ADMIN" },
-                    { "2", null, "User", "USER" }
+                    { "4f8330b6-d35d-48cd-ae90-bcf3b99e5bf4", null, "Customer", "CUSTOMER" },
+                    { "868ec149-0d43-49c2-ac2c-923f5cd8261c", null, "Admin", "ADMIN" }
                 });
         }
 
@@ -28,12 +28,12 @@ namespace Auth.API.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "1");
+                keyValue: "4f8330b6-d35d-48cd-ae90-bcf3b99e5bf4");
 
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "2");
+                keyValue: "868ec149-0d43-49c2-ac2c-923f5cd8261c");
         }
     }
 }

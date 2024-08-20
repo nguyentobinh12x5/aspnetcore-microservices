@@ -1,10 +1,10 @@
 using System;
-using Auth.API.Models;
+using AuthAPI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Auth.API.Data;
+namespace AuthAPI.Data;
 
 public class AppDbContext : IdentityDbContext<ApplicationUser>
 {
@@ -17,20 +17,12 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
-        builder.Entity<IdentityRole>().HasData(new IdentityRole
-        {
-            Id = "1",
-            Name = "Admin",
-            NormalizedName = "ADMIN"
-        },
-        new IdentityRole
-        {
-            Id = "2",
-            Name = "User",
-            NormalizedName = "USER"
-        });
-
+        // Seed roles
+        builder.Entity<IdentityRole>().HasData(
+            new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" },
+            new IdentityRole { Name = "Customer", NormalizedName = "CUSTOMER" }
+        );
     }
+
 
 }
